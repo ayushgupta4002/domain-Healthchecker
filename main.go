@@ -32,6 +32,7 @@ func main() {
 			port := c.String("port")
 			if c.String("port") == "" {
 				port = "80"
+				
 			}
 			status := check.Check(c.String("domain"), port)
 			fmt.Println(status)

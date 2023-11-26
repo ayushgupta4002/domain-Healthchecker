@@ -18,5 +18,6 @@ func Check(domain string, port string) string {
 	} else {
 		status = fmt.Sprintf("[UP] %v is reachable , \n From : %v \n To : %v", domain, connection.LocalAddr(), connection.RemoteAddr())
 	}
+
 	return status
 }
